@@ -4,14 +4,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Score Board</title>
-        <script src="jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script>
-            /*jshint esversion: 6 */
             $(document).ready(function(){
                 $("#gamePointer").css("height",$("#gamePoints").height()+2)
                                  .css("top",$("#gamePoints").offset().top-5)
                                  .css("left",$("#gamePoints").offset().left-3);
-                //addGLP(1);
                 for (let i = 1; i < 10; i++) {
                     $(`#homeSmallPoints > td:nth-child(${i*2+1})`).css("opacity",0);
                     $(`#homeSmallPoints > td:nth-child(${i*2+2})`).css("opacity",0);
